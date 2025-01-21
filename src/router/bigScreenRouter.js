@@ -6,20 +6,17 @@ const router = createRouter({
   routes: [
     {
       path: '/bigScreen',
-      // name: 'home',
-      // component: () => import('./views/Home.vue'),
-      // component: () => import('./views/Cesium/index.vue'),
       redirect: '/bigScreen/cesium',
       children: [
         {
           path: 'cesium',
           name: 'cesium',
-          component: () => import('./views/Cesium/index.vue'),
+          component: () => import('../views/bigScreen/Cesium/index.vue'),
           children: [
             {
               path: 'demo1',
               name: 'cesium-demo1',
-              component: () => import('./views/Cesium/demo1.vue'),
+              component: () => import('../views/bigScreen/Cesium/demo1.vue'),
             }
           ]
         }

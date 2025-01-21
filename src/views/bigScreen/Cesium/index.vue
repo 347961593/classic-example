@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { RouterView } from "vue-router";
-import { initializeCesium } from '../../utils/cesium.js';
+import { initializeCesium } from '../../../utils/cesium.js';
 
 onMounted(() => {
   initializeCesium('MapContainer')

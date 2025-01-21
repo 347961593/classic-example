@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-import { getViewer } from '../../utils/cesium.js';
+import { getViewer } from '../../../utils/cesium.js';
 import * as Cesium from 'cesium';
 function addMarker() {
   const viewer = getViewer();

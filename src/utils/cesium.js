@@ -1,4 +1,5 @@
 import { Ion, Viewer } from 'cesium';
+import * as Cesium from 'cesium';
 import 'cesium/Build/Cesium/Widgets/widgets.css';
  
 //去cesium官网申请一个token 
@@ -20,8 +21,12 @@ export function initializeCesium(containerId) {
             timeline: true,
             navigationHelpButton: false,
         });
+        console.log('1111',viewer);
+        
+        // viewer.imageryLayers.addImageryProvider(new Cesium.IonImageryProvider({ assetId : 354307 }));
         // 去除版权信息
         viewer._cesiumWidget._creditContainer.style.display = 'none';
+        console.log('1111',viewer);
     }
     return viewer;
 }

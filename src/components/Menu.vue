@@ -25,7 +25,7 @@ defineProps({
     </el-sub-menu>
         <el-sub-menu index="/cesium">
       <template #title>CesiumJS</template>
-      <el-menu-item index="/cesium/demo1">demo1</el-menu-item>
+      <el-menu-item index="/bigScreen/cesium/demo1">demo1</el-menu-item>
     </el-sub-menu>
     <el-sub-menu index="/three">
       <template #title>Three.js</template>

@@ -1,8 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-  // history: createWebHistory(import.meta.env.BASE_URL),
-  history: createWebHistory('/'),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
@@ -23,15 +22,6 @@ const router = createRouter({
       }
     ]
     },
-    // {
-    //   path: '/cesium',
-    //   component: () => import('../views/Cesium/index.vue'),
-    //   children: [{
-    //     path: 'demo1',
-    //     name: 'cesium-demo1',
-    //     component: () => import('../views/Cesium/demo1.vue'),
-    //   }]
-    // },
     {
       path: '/three',
       component: () => import('../views/ThreeJs/index.vue'),
@@ -42,6 +32,16 @@ const router = createRouter({
       }]
     },
   ],
+})
+
+router.beforeEach((to, from, next) => {
+  console.log(to);
+  
+  if (to.path.startsWith('/bigScreen')) {
+    window.location.href = window.location.origin + to.path;
+  } else {
+    next()
+  }
 })
 
 export default router
