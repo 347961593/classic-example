@@ -31,6 +31,10 @@ defineProps({
       <template #title>Three.js</template>
       <el-menu-item index="/three/demo1">demo1</el-menu-item>
     </el-sub-menu>
+    <el-sub-menu index="/more">
+      <template #title>More</template>
+      <el-menu-item index="/websockets">WebSockets</el-menu-item>
+    </el-sub-menu>
     <!-- <el-sub-menu index="3" :popper-offset="8">
       <template #title>Override Popper Offset</template>
       <el-menu-item index="3-1">item one</el-menu-item>

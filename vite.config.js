@@ -15,15 +15,13 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, 'src'),
+      '@views': path.resolve(__dirname, "src/views"),
+      '@comp': path.resolve(__dirname, "src/components"),
+      '@router': path.resolve(__dirname, "src/router"),
+      '@utils': path.resolve(__dirname, "src/utils"),
+      '@store': path.resolve(__dirname, "src/store"),
+      '@assets': path.resolve(__dirname, "src/assets"),
     },
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html'),
-        nested: path.resolve(__dirname, 'bigScreen.html'),
-      }
-    }
   },
 })

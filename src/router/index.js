@@ -6,30 +6,35 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/home.vue'),
+      component: () => import('@views/Home.vue'),
     },
     {
       path: '/webgis',
-      component: () => import('../views/WebGIS/index.vue'),
+      component: () => import('@views/WebGIS/index.vue'),
       children: [{
         path: 'leaflet',
         name: 'webgis-leaflet',
-        component: () => import('../views/WebGIS/leaflet.vue'),
+        component: () => import('@views/WebGIS/leaflet.vue'),
       },{
         path: 'openlayers',
         name: 'webgis-openlayers',
-        component: () => import('../views/WebGIS/openlayers.vue'),
+        component: () => import('@views/WebGIS/openlayers.vue'),
       }
     ]
     },
     {
       path: '/three',
-      component: () => import('../views/ThreeJs/index.vue'),
+      component: () => import('@views/ThreeJs/index.vue'),
       children: [{
         path: 'demo1',
         name: 'three-demo1',
-        component: () => import('../views/ThreeJs/demo1.vue'),
+        component: () => import('@views/ThreeJs/demo1.vue'),
       }]
+    },
+    {
+      path: '/websockets',
+      name: 'websockets',
+      component: () => import('@views/WebSockets.vue'),
     },
   ],
 })

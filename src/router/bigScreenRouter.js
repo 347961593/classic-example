@@ -11,12 +11,12 @@ const router = createRouter({
         {
           path: 'cesium',
           name: 'cesium',
-          component: () => import('../views/bigScreen/Cesium/index.vue'),
+          component: () => import('@views/bigScreen/Cesium/index.vue'),
           children: [
             {
-              path: 'demo1',
-              name: 'cesium-demo1',
-              component: () => import('../views/bigScreen/Cesium/demo1.vue'),
+              path: 'monitor',
+              name: 'cesium-monitor',
+              component: () => import('@views/bigScreen/Cesium/monitor.vue'),
             }
           ]
         }
