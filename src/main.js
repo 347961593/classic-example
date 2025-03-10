@@ -8,6 +8,7 @@ import bigScreenRouter from './router/bigScreenRouter.js'
 import ElementPlus from 'element-plus'
 import { createPinia } from 'pinia'
 import 'element-plus/dist/index.css'
+import VConsole from 'vconsole';
 
 const pathname = location.pathname
 let app
@@ -23,3 +24,5 @@ app.use(ElementPlus)
 app.use(createPinia())
 
 app.mount('#app')
+
+app.use(new VConsole())

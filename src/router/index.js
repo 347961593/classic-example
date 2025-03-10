@@ -36,6 +36,11 @@ const router = createRouter({
       name: 'websockets',
       component: () => import('@views/WebSockets.vue'),
     },
+    {
+      path: '/iat',
+      name: 'iat',
+      component: () => import('@views/iat.vue'),
+    },
   ],
 })
 

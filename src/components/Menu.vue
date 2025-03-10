@@ -34,6 +34,7 @@ defineProps({
     <el-sub-menu index="/more">
       <template #title>More</template>
       <el-menu-item index="/websockets">WebSockets</el-menu-item>
+      <el-menu-item index="/iat">Iat</el-menu-item>
     </el-sub-menu>
     <!-- <el-sub-menu index="3" :popper-offset="8">
       <template #title>Override Popper Offset</template>
