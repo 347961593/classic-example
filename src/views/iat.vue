@@ -13,7 +13,6 @@
 import { onMounted, ref } from "vue";
 import CryptoJS from "crypto-js";
 import '/public/js/xf/index.umd.js'
-// const RecorderManager = require("/public/static/js/xf/index.umd.js");
 const APPID = "57ad5e97";
 const API_SECRET = "NDJiZjkzZDgzM2U5NTI4MjA2M2IyN2Fm";
 const API_KEY = "fc4effe6973e9ab72be197fe8ae60876";
