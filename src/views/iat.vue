@@ -137,7 +137,7 @@ const btnTxt = ref("开始录音");
           clearInterval(countdownInterval);
           recorder.stop();
         } else {
-          btnTxt = `录音中（${seconds}s）`;
+          btnTxt.value = `录音中（${seconds}s）`;
         }
       }, 1000);
     }

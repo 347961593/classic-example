@@ -25,4 +25,4 @@ app.use(createPinia())
 
 app.mount('#app')
 
-app.use(new VConsole())
+// app.use(new VConsole())
